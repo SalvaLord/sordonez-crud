@@ -29,5 +29,5 @@
     <input type="file" name="foto" id="foto">
     <br>
     
-    <input type="submit" value="Guardar Datos">  
+    <input type="submit" value="Guardar Datos">
 </form>
