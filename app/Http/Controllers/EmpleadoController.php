@@ -44,7 +44,7 @@ class EmpleadoController extends Controller
         }
 
         Empleado::insert($datosEmpleado);
-        
+        return redirect('empleado');
     }
 
     /**
