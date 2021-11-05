@@ -44,7 +44,7 @@ class EmpleadoController extends Controller
         }
 
         Empleado::insert($datosEmpleado);
-        return response()->json($datosEmpleado);
+        return alert('Empleado registrado');
     }
 
     /**
@@ -87,8 +87,9 @@ class EmpleadoController extends Controller
      * @param  \App\Models\Empleado  $empleado
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Empleado $empleado)
+    public function destroy($id)
     {
-        //
+        Empleado::destroy($id);
+        return redirect('empleado');
     }
 }
