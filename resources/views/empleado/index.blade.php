@@ -26,7 +26,7 @@ Mostrar lista de empleados :)
             <td>{{ $empleado->correo }}</td>
             <td>
                 <form action="{{ url('/empleado/'.$empleado->id.'/edit') }}">
-
+                    @csrf
                     <input type="submit" value="Editar">
                 </form> | 
                 <form action="{{ url('/empleado/'.$empleado->id) }}" method="post">
